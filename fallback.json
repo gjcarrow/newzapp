@@ -1,0 +1,10 @@
+{
+	"articles": [
+		{
+			"title": "I couldn't fetch the news because you're not connected to the internet, so I'm gonna go try to fix it.",
+			"url" : "#",
+			"urlToImage": "images/newz-dog.png",
+			"description": "There is currently no access to the internet. Load this page again when you're online to see the lastest articles."
+		}
+	]
+}

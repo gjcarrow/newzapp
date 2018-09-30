@@ -1,0 +1,356 @@
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%
+}
+
+*, :after, :before {
+  box-sizing: inherit
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0
+}
+
+:after, :before {
+  text-decoration: inherit;
+  vertical-align: inherit
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+hr {
+  overflow: visible
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block
+}
+
+summary {
+  display: list-item
+}
+
+small {
+  font-size: 80%
+}
+
+[hidden], template {
+  display: none
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects
+}
+
+a:active, a:hover {
+  outline-width: 0
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace
+}
+
+b, strong {
+  font-weight: bolder
+}
+
+dfn {
+  font-style: italic
+}
+
+mark {
+  background-color: #ff0;
+  color: #000
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sub {
+  bottom: -.25em
+}
+
+sup {
+  top: -.5em
+}
+
+input {
+  border-radius: 0
+}
+
+[type=button], [type=reset], [type=submit] [role=button], button {
+  cursor: pointer
+}
+
+[disabled] {
+  cursor: default
+}
+
+[type=number] {
+  width: auto
+}
+
+[type=search] {
+  -webkit-appearance: textfield
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit
+}
+
+optgroup {
+  font-weight: 700
+}
+
+button {
+  overflow: visible
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: 0;
+  padding: 0
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button
+}
+
+button, select {
+  text-transform: none
+}
+
+button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none
+}
+
+select::-ms-expand {
+  display: none
+}
+
+select::-ms-value {
+  color: currentColor
+}
+
+legend {
+  border: 0;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+img {
+  border-style: none
+}
+
+progress {
+  vertical-align: baseline
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+audio, canvas, progress, video {
+  display: inline-block
+}
+
+@media screen {
+  [hidden~=screen] {
+    display: inherit
+  }
+  [hidden~=screen]:not(:active):not(:focus):not(:target) {
+    position: absolute!important;
+    clip: rect(0 0 0 0)!important
+  }
+}
+
+[aria-busy=true] {
+  cursor: progress
+}
+
+[aria-controls] {
+  cursor: pointer
+}
+
+[aria-disabled] {
+  cursor: default
+}
+
+::-moz-selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none
+}
+
+::selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ0NC44MTkgNDQ0LjgxOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ0LjgxOSA0NDQuODE5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQzNC4yNTIsMTE0LjIwM2wtMjEuNDA5LTIxLjQxNmMtNy40MTktNy4wNC0xNi4wODQtMTAuNTYxLTI1Ljk3NS0xMC41NjFjLTEwLjA5NSwwLTE4LjY1NywzLjUyMS0yNS43LDEwLjU2MSAgIEwyMjIuNDEsMjMxLjU0OUw4My42NTMsOTIuNzkxYy03LjA0Mi03LjA0LTE1LjYwNi0xMC41NjEtMjUuNjk3LTEwLjU2MWMtOS44OTYsMC0xOC41NTksMy41MjEtMjUuOTc5LDEwLjU2MWwtMjEuMTI4LDIxLjQxNiAgIEMzLjYxNSwxMjEuNDM2LDAsMTMwLjA5OSwwLDE0MC4xODhjMCwxMC4yNzcsMy42MTksMTguODQyLDEwLjg0OCwyNS42OTNsMTg1Ljg2NCwxODUuODY1YzYuODU1LDcuMjMsMTUuNDE2LDEwLjg0OCwyNS42OTcsMTAuODQ4ICAgYzEwLjA4OCwwLDE4Ljc1LTMuNjE3LDI1Ljk3Ny0xMC44NDhsMTg1Ljg2NS0xODUuODY1YzcuMDQzLTcuMDQ0LDEwLjU2Ny0xNS42MDgsMTAuNTY3LTI1LjY5MyAgIEM0NDQuODE5LDEzMC4yODcsNDQxLjI5NSwxMjEuNjI5LDQzNC4yNTIsMTE0LjIwM3oiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+  padding-right: 2.5em
+}
+body {
+  min-width:340px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color:#000;
+}
+header .icon {
+  display: block;
+  width:150px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+header .icon img {
+  display: block;
+  width:100%;
+  height: auto;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  margin: 8px;
+  padding:0;
+  margin:0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+}
+
+main {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: max-content;
+  grid-auto-flow: row dense;
+  width: 90%;
+  margin: 20px auto 0;
+}
+
+.article h2 {
+  font-family: merriweather, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+.article a,
+.article a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article img {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.article img:not([src^='./images/']) {
+  width: 100%;
+}
+
+.header-select {
+  margin-right: 10px;
+}
+
+#newsSources {
+  /* transform: translateX(-25px); */
+  padding: 3px;
+  color:white;
+  background-color: #000000;
+  font-family: roboto;
+}
+
+.article p {
+    color: #000;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+
+.article {
+    /* background: #e8e8e8; */
+    box-shadow: 6px 7px 8px rgba(0,0,0,.45);
+    border-radius: 6px;
+    padding: .74em;
+    border: 1px solid rgba(0,0,0,.25);
+}
+
+@media screen and (max-width:660px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px; 
+  }
+  .header-select {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  .header-text {/*     font-size: 100%; */margin: 0 auto 8px;}
+
+  #newsSources {
+    transform: none;
+    width: 100%;
+  }
+}
