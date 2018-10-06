@@ -8,7 +8,11 @@ const STATIC_ASSETS = [
 	'images/dog-logo.png',
 	'images/newz-dog.png',
 	'images/place.jpg',
-	'./fallback.json'
+	'./fallback.json',
+	'favicon.ico',
+	'favicon-16x16.png',
+	'favicon-32x32.png',
+	'favicon-96x96.png'
 	]
 
 self.addEventListener('install', async event=>{
