@@ -1,9 +1,11 @@
-const CACHE_NAME = 'newz-static-1'
+const CACHE_NAME = 'newz-static-2'
 
 const STATIC_ASSETS = [
-	'/',
+	'index.html',
+	'./',
 	'js/script.js',
 	'css/styles.css',
+	'images/dog-logo.png',
 	'images/newz-dog.png',
 	'images/place.jpg',
 	'./fallback.json'
@@ -15,7 +17,16 @@ self.addEventListener('install', async event=>{
 })
 
 self.addEventListener('activate', event=>{
-	event.waitUntil(self.clients.claim())
+	const currentCaches = [CACHE_NAME]
+	event.waitUntil(
+		caches.keys().then(cacheNames=> {
+			return cacheNames.filter(cacheName=>!currentCaches.includes(cacheName))
+		}).then(cachesToDelete=>{
+			return Promise.all(cachesToDelete.map(cacheToDelete=>{
+				return caches.delete(cacheToDelete)
+			}))
+		}).then(()=>self.clients.claim())
+		)
 })
 
 self.addEventListener('fetch', async event=>{
