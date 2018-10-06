@@ -5,7 +5,7 @@ const STATIC_ASSETS = [
 	'js/script.js',
 	'css/styles.css',
 	'images/newz-dog.png',
-	'images/white-dog-icon.png',
+	'images/place.jpg',
 	'./fallback.json'
 	]
 

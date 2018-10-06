@@ -39,11 +39,12 @@ async function updateNews (source = defaultSource) {
 
 	const json = await response.json()
 	newsArticles.innerHTML = json.articles.map(createArticle).join('\n');
+	sourceSelector.blur()
 }
 
 function createArticle (article) {
 	const backups = {
-		urlToImage: 'images/white-dog-icon.png',
+		urlToImage: 'images/place.jpg',
 		description: 'A description for this article is not currently available.',
 		title: 'News Item',
 		url: '#'
