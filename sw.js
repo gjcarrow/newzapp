@@ -1,4 +1,4 @@
-const CACHE_NAME = 'newz-static-3'
+const CACHE_NAME = 'newz-static-v-1'
 
 const STATIC_ASSETS = [
 	'index.html',
